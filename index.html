@@ -4,42 +4,66 @@
     <head>
         <title>Case Study</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/styles.css">
         <link rel="JavaScript" href="js/index.js">
     </head>
 <body>
 
 <!--Navigation component-->
+<header class="navigation">
 
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active" href="#intro">Introduction</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#research">Research</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#problem">Problem Statement</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#prototype">Prototype</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+  <div class="inline-block logo">
+      <img src="images/friendly spider.png" alt="friendly spider" class="inline-block logo">
+  </div>
+
+ 
+<!--Nav for Case Study-->
+<div class="caseStudyNav"></div>
+      
+<ul class="nav justify-content-start">
+  <li class="nav-item">
+    <a class="nav-link active" href="#intro">Introduction</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#research">Research</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#problem">Problem Statement</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#prototype">Prototype</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+
+</div>
+</div>
+
+</header>
 
 <!--Introduction component-->
-
-<div class="jumbotron jumbotron-fluid">
+<section class="introduction">
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <h1 class="display-4">Website redesign for FTC.gov</h1>
+      <p class="lead">The Federal Trade Commission website houses a lot of valuable information, <br>but it can take users effort to find what they are looking for. 
+      <br> </p>
+        <div class=flexContainer>
+          <div class="introImage"><img src="images/Home (2).png"; style= "max-width: 500px";></div>
+          <div class="introDetails">
+            <div><h3>How long did it take?</h3><p>3 weeks</p></div>
+            <div><h3>What was my role?</h3><p>Sole UX Researcher <br>Sole UX Designer<br></p></div>
+            <div><h3>What software did I use?</h3><p>Miro<br>Figma</p></div>
+          </div>
+        </div>
     </div>
-  </div>
 
+</section>
 <!--Research component-->
-<div class="card mb-3" style="max-width: 540px;">
+<section class="research">
+<div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="..." class="card-img" alt="...">
@@ -52,7 +76,7 @@
       </div>
     </div>
   </div>
-</div><div class="card mb-3" style="max-width: 540px;">
+</div><div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="..." class="card-img" alt="...">
@@ -65,7 +89,7 @@
       </div>
     </div>
   </div>
-</div><div class="card mb-3" style="max-width: 540px;">
+</div><div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="..." class="card-img" alt="...">
@@ -79,18 +103,19 @@
     </div>
   </div>
 </div>
-
+</section>
 <!--Problem Statement component-->
-
+<section class="problemStatement">
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="display-4">Fluid jumbotron</h1>
-      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <h1 class="display-4">Problem Statement</h1>
+      <p class="lead">Users concerned about being victims of scams and identity theft look to the FTC’s website for help in attaining resources that will help them feel protected and empowered. How might we streamline this process to provide clarity about the consumers’ rights and protections?
+      </p>
     </div>
   </div>
-
+</section>
 <!--Iteration component-->
-
+<section class="iteration">
 <div class="media">
     <img src="..." class="mr-3" alt="...">
     <div class="media-body">
@@ -108,8 +133,9 @@
       </div>
     </div>
   </div>
-
+</section>
 <!--Prototype col system-->
+<section class="prototype">
 <div class="container">
     <div class="row justify-content-md-center">
       <div class="col col-lg-2">
@@ -135,7 +161,7 @@
     </div>
   </div>
 
-
+</section>
 
 </body>
 
