@@ -22,6 +22,10 @@ header {
     background-color: #DCD0E8;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
 .flexContainer {
     display: flex;
     flex-direction: row;
@@ -52,6 +56,17 @@ header {
 .problemStatement {
     background-color:#DCD0E8;
     padding:20px;
+
+}
+.psHead {
+    text-align: center;
+}
+.psBody {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 48px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .mr-3 {
@@ -75,18 +90,21 @@ header {
     padding-bottom: 20px;
 }
 
-.col-lg-8 {
-    background-color:black;
-    color:#EBE399;
+.container {
+    border:black, solid, 3px;
+    border-radius: 10px;
 }
-.col-lg-4 {
+.media-body {
     background-color:#DCD0E8;
-    color:#82417D;
+    padding-left: 40px;
+    padding-right: auto;
+    padding-top: 20px;
+    border-style: solid;
+    border-color: #82417D;
+    border-radius: 10px;
+    border: 10px;
 }
-.col-md-auto {
-    background-color: #DCD0E8;
-}
-.row {
-    background-color:#82417D;
-    color:#DCD0E8;
+.container-fluid {
+    background-color: white !important; 
+    
 }
