@@ -6,11 +6,15 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="CSS/styles.css">
         <link rel="JavaScript" href="js/index.js">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
 <body>
 
 <!--Navigation component-->
-<header class="navigation">
+<header class="navigation" style="text-decoration: none; color:#F4ECE7;">
 
   <div class="inline-block logo">
       <img src="images/friendly spider.png" alt="friendly spider" class="inline-block logo">
@@ -22,19 +26,19 @@
       
 <ul class="nav justify-content-start">
   <li class="nav-item">
-    <a class="nav-link active" href="#intro">Introduction</a>
+    <a class="nav-link active" href="#intro" style="color:#EBE399;">Introduction</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#research">Research</a>
+    <a class="nav-link" href="#research" style="color:#EBE399;">Research</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#problem">Problem Statement</a>
+    <a class="nav-link" href="#problem" style="color:#EBE399;">Problem Statement</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#prototype">Prototype</a>
+    <a class="nav-link" href="#iteration" style="color:#EBE399;">Iteration</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="nav-link" href="#prototype" style="color:#EBE399;">Prototype</a>
   </li>
 </ul>
 
@@ -44,7 +48,7 @@
 </header>
 
 <!--Introduction component-->
-<section class="introduction">
+<section class="introduction" id="#intro">
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Website redesign for FTC.gov</h1>
@@ -52,60 +56,89 @@
       <br> </p>
         <div class=flexContainer>
           <div class="introImage"><img src="images/Home (2).png"; style= "max-width: 500px";></div>
-          <div class="introDetails">
-            <div><h3>How long did it take?</h3><p>3 weeks</p></div>
-            <div><h3>What was my role?</h3><p>Sole UX Researcher <br>Sole UX Designer<br></p></div>
-            <div><h3>What software did I use?</h3><p>Miro<br>Figma</p></div>
-          </div>
+            <div class="introDetails">
+              <div><h3>How long did it take?</h3><p>3 weeks</p></div>
+              <div><h3>What was my role?</h3><p>User Interaction Research <br> User Interaction Design<br></p></div>
+              <div><h3>What tools did I use?</h3><p>Miro<br>Figma</p></div>
+            </div>
         </div>
     </div>
-
+  </div>
 </section>
 <!--Research component-->
-<section class="research">
-<div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
+<section class="research" id="#research">
+  
+
+
+  <div class="card mb-3" style="max-width: 1200px; margin:auto;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Heuristic Evaluation</h5>
+          <p class="card-text">I performed a heuristic evaluation for the original ftc.gov website. <br>For my notes, I prioritised making these changes:<br>
+          <small><li> Making the website easy to scan </li>
+          <br><li>Using minimal text</li> 
+          <br> <li>Clear terminology</li>
+          <br><li>Proper off-site link etiquette</li> 
+          <br> <li>Contact Info easy to find</li>
+          <br> <li>Consistent navigation</li>
+          <br> <li>Reorganize information</li></small>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="col-md-8">
+        <img src="images/heuristicRedlineFTC.png" class="card-img" alt="image of a webpage for the federal trade commission with notes about the design">
+      </div>
+
+      
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+
+
+  <div class="card mb-3" style="max-width: 1200px; margin:auto;">
+    <div class="row no-gutters">
+
+      <div class="col-md-8">
+        <img src="images/BrendaFTCTest - .png" class="card-img" alt="image of a computer screen with two people in a zoom call performing a user test">
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Usability Testing</h5>
+          <p class="card-text">During usability testing, I found that users were struggling to complete certain tasks, especially the following: 
+          <br><li>The information for how to view the workshop is hard to find because it blends in with the paragraph. </li>
+          <br><li>Users often get distracted by the "What We Do" section. Some information is also redundant.</li>
+          <br><li>Users are aware of being directed to a different site and experience anxiety about the form process.
+          </li></p>
+        </div>
+
       </div>
     </div>
   </div>
-</div><div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+  <div class="card mb-3" style="max-width: 1200px; margin:auto;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Proto-Persona</h5>
+          <p class="card-text">With the data from interviews and heuristic evaluation, I developed a proto-persona to create greater empathy with the user. </p>
+          
+        </div>
+
       </div>
+
+      <div class="col-md-8">
+        <img src="images/Joan Milano proto persona.png" class="card-img" alt="image of a mature woman who appears to be of grandparent age">
+      </div>
+
+      
     </div>
   </div>
-</div><div class="card mb-3" style="max-width: 840px; margin-left: 100px;">
-  <div class="row no-gutters">
-    <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
 </section>
 <!--Problem Statement component-->
-<section class="problemStatement">
+<section class="problemStatement" id="#problem">
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Problem Statement</h1>
@@ -114,53 +147,69 @@
     </div>
   </div>
 </section>
+
+
 <!--Iteration component-->
-<section class="iteration">
-<div class="media">
-    <img src="..." class="mr-3" alt="...">
+<section class="iteration" id="#iteration">
+  <div class="media">
+ 
     <div class="media-body">
-      <h5 class="mt-0">Media heading</h5>
-      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  
-      <div class="media mt-3">
-        <a class="mr-3" href="#">
-          <img src="..." class="mr-3" alt="...">
-        </a>
+      <div class=flex>
+      <div class=sitemapBody>
+        <h5 class="mt-0">Site Map Redesign</h5>
+        <p>After testing, I redesigned the site map with the help of a card sorting activity. <br>
+        The testing helped me understand what to redesign about the site map: 
+        <br><li>Consolidate repetition</li>
+        <br><li>Minimize text</li>
+        <br><li>Use Clear terminology</li>
+        <br><li>Alphabetize</li>
+        <br><li>Make Contact Info easy to find</li>
+        <br><li>Streamline information by reducing top level categories</li> </p>
+      </div> 
+        <div class=imagesIteration>
+          <img src="images/09.2-04-FTCInformation-Architecture-Sitemap Template.png" class="mr-3" alt="a sitemap of the ftcgov website redesign">
+          <small><p>Information Architecture Sitemap Redesign</p></small>
+        </div>
+      </div>
+        <div class="media mt-3">
         <div class="media-body">
-          <h5 class="mt-0">Media heading</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h5 class="mt-0">Design Iteration</h5>
+          <p>I began with basic low fidelity wireframes, then designed the wireframes out according to a style guide I developed that resonates with the original design yet meeting my design goals:
+         <br> <li>Simple logo and headline</li>
+           <br> <li> Hamburger menu opens overlay of main navigation</li>
+           <br> <li> Hero image and feature text describing strategic goals</li>
+           <br> <li> Footer includes main navigation items</li>
+            <br><li>Colors give hint of thoughtfulness to design while maintaining minimalist aesthetic
+            </li></p>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!--Prototype col system-->
-<section class="prototype">
-<div class="container">
-    <div class="row justify-content-md-center">
-      <div class="col col-lg-2">
-        1 of 3
-      </div>
-      <div class="col-md-auto">
-        Variable width content
-      </div>
-      <div class="col col-lg-2">
-        3 of 3
-      </div>
-    </div>
+<section class="prototype" id="#prototype">
+
+  <div class="container-fluid">
+  <h1>Medium Grid</h1>
+  <p>The following example will result in a 25%/75% split on small devices and a 50%/50% split on medium (and large and xlarge) devices. On extra small devices, it will automatically stack (100%).</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="container-fluid">
     <div class="row">
-      <div class="col">
-        1 of 3
+      <div class="col-sm-3 col-md-6 bg-success">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </div>
-      <div class="col-md-auto">
-        Variable width content
-      </div>
-      <div class="col col-lg-2">
-        3 of 3
+      <div class="col-sm-9 col-md-6 bg-warning">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       </div>
     </div>
   </div>
+</div>
 
+  <div class="desktop">
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDmUPsdrkkmcPXmeo7p1KGz%2FUIDesignChallenge%3Fnode-id%3D60%253A0%26scaling%3Dscale-down-width%26page-id%3D56%253A2%26starting-point-node-id%3D60%253A0" allowfullscreen></iframe>
+  </div>
+  
 </section>
 
 </body>

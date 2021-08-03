@@ -2,12 +2,12 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
-    color:hsl(282, 56%, 35%);
+    color:#82417D;
    
 }
 header {
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 32%, rgba(110,39,140,1) 100%);
+    background-color:#82417D;
+    background: linear-gradient(0deg, rgba(130,65,125,51) 100%,rgba(0,0,0,1) 32%,);
     display:flex;
     flex-direction: row;    
     align-items: baseline;
@@ -19,7 +19,7 @@ header {
 }
 
 .introduction {
-    background-color: antiquewhite;
+    background-color: #DCD0E8;
 }
 
 .flexContainer {
@@ -34,6 +34,7 @@ header {
     display:inline-flex;
     margin-top:auto;
     background-color: transparent;
+    color:#EBE399;
     }
 
     .logo {
@@ -41,18 +42,51 @@ header {
         display:flex;
         margin-right:0px;
     }  
-    nav {
-        display:flex;
-        width: 75%;
-        background-color:hsl(282, 56%, 35%);
-        color:antiquewhite;
-    }
+  
+
 .research {
-    background-color: hsl(282, 56%, 35%);
+    background-color:#82417D;
     padding:20px;
 
 }
 .problemStatement {
-    background-color: antiquewhite;
+    background-color:#DCD0E8;
     padding:20px;
+}
+
+.mr-3 {
+    max-width: 540px;
+    border-radius: 10px;
+}
+.sitemapBody {
+    margin-left: 40px;
+    padding-right: 15px;
+    
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    background-color:#82417D;
+    color:#EBE399;
+    padding-left: 100px;
+    padding-right: 48px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+
+.col-lg-8 {
+    background-color:black;
+    color:#EBE399;
+}
+.col-lg-4 {
+    background-color:#DCD0E8;
+    color:#82417D;
+}
+.col-md-auto {
+    background-color: #DCD0E8;
+}
+.row {
+    background-color:#82417D;
+    color:#DCD0E8;
 }
